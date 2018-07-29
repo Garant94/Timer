@@ -33,7 +33,6 @@ class CircleTimerHelper {
         let cosAngle = (vA.x * vB.x + vA.y * vB.y) / (vALength * vBLength)
         
         let result = vB.x < 0 ? endAngle + 10 - Math.radiansToDegrees(value: acos(cosAngle)) : Math.radiansToDegrees(value: acos(cosAngle))
-        print(result)
         return result
     }
 }

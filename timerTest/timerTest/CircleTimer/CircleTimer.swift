@@ -172,7 +172,6 @@ class CircleTimer: UIControl {
     }
     
     private func startTimer() {
-        print(drawer.angle)
         tempAngle = drawer.angle >= 0 ? drawer.endAngle - drawer.angle : abs(drawer.angle)
         lastAngleBeforeStart = tempAngle
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(animateTrackWhenCounting), userInfo: nil, repeats: true)
